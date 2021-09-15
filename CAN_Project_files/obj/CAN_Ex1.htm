@@ -1,0 +1,846 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\obj\CAN_Ex1.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\obj\CAN_Ex1.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Mon Sep 06 04:38:30 2010
+<BR><P>
+<H3>Maximum Stack Usage =        112 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+task_CAN_tx &rArr; Transmit &rArr; CAN_send &rArr; CAN_push &rArr; os_mbx_send &rArr; os_dispatch &rArr; os_put_prio
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[d979d0]">Reset_Handler</a>
+ <LI><a href="#[d917d8]">os_sys_manager_ret</a>
+ <LI><a href="#[d9179c]">os_switch_tasks_ret</a>
+ <LI><a href="#[d97bec]">Undef_Handler</a>
+ <LI><a href="#[d97bb0]">PAbt_Handler</a>
+ <LI><a href="#[d97b74]">DAbt_Handler</a>
+ <LI><a href="#[d97b38]">IRQ_Handler</a>
+ <LI><a href="#[d97afc]">FIQ_Handler</a>
+ <LI><a href="#[d91a30]">Switch_task</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[d96ecc]">os_idle_demon</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d96ecc]">os_idle_demon</a><BR>
+ <LI><a href="#[d96e54]">os_stk_overflow</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d96e54]">os_stk_overflow</a><BR>
+ <LI><a href="#[d97bec]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d97bec]">Undef_Handler</a><BR>
+ <LI><a href="#[d97bb0]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d97bb0]">PAbt_Handler</a><BR>
+ <LI><a href="#[d97b74]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d97b74]">DAbt_Handler</a><BR>
+ <LI><a href="#[d97b38]">IRQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d97b38]">IRQ_Handler</a><BR>
+ <LI><a href="#[d97afc]">FIQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d97afc]">FIQ_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[d979d0]">Reset_Handler</a>
+ <LI><a href="#[d97bec]">Undef_Handler</a>
+ <LI><a href="#[d97958]">SWI_Handler</a>
+ <LI><a href="#[d97bb0]">PAbt_Handler</a>
+ <LI><a href="#[d97b74]">DAbt_Handler</a>
+ <LI><a href="#[d97b38]">IRQ_Handler</a>
+ <LI><a href="#[d97afc]">FIQ_Handler</a>
+ <LI><a href="#[d8db24]">__main</a>
+ <LI><a href="#[d97ef8]">main</a>
+ <LI><a href="#[d951f8]">os_sys_init1</a>
+ <LI><a href="#[d96d28]">os_irq_ack_lock</a>
+ <LI><a href="#[d915f8]">os_sys_manager</a>
+ <LI><a href="#[d96cb0]">tsk_unlock</a>
+ <LI><a href="#[d91a30]">Switch_task</a>
+ <LI><a href="#[d98ee8]">CAN_ISR</a>
+ <LI><a href="#[d97f70]">task_CAN_tx</a>
+ <LI><a href="#[d97fac]">task_CAN_rx</a>
+ <LI><a href="#[d97f34]">task_init</a>
+ <LI><a href="#[d96c74]">os_clock_interrupt</a>
+ <LI><a href="#[d91760]">__SWI_0</a>
+ <LI><a href="#[d9278c]">__SWI_1</a>
+ <LI><a href="#[d92750]">__SWI_2</a>
+ <LI><a href="#[d91724]">__SWI_3</a>
+ <LI><a href="#[d916e8]">__SWI_4</a>
+ <LI><a href="#[d915bc]">__SWI_5</a>
+ <LI><a href="#[d91580]">__SWI_6</a>
+ <LI><a href="#[d91544]">__SWI_7</a>
+ <LI><a href="#[d96ecc]">os_idle_demon</a>
+ <LI><a href="#[d97e08]">os_tsk_create0</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[d979d0]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, lpc2300.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
+</UL>
+<P><STRONG><a name="[d8db24]"></a>__main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+
+<P><STRONG><a name="[d8d6ec]"></a>_main_stk</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[d8d5fc]"></a>_main_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[d8d32c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d8d5c0]"></a>__main_after_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[d8d32c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d8d4d0]"></a>_main_init</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry7.o(.ARM.Collect$$$$00000007))
+
+<P><STRONG><a name="[d94dc0]"></a>os_set_env</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_hal.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+</UL>
+
+<P><STRONG><a name="[d97e44]"></a>os_sys_init0</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, rt_hal.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[d97ef8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d94d84]"></a>os_sys_run</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rt_hal.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+</UL>
+
+<P><STRONG><a name="[d96c74]"></a>os_clock_interrupt</STRONG> (ARM, 128 bytes, Stack size 0 bytes, rt_hal.o(.emb_text))
+<BR>[Address Reference Count : 1]<UL><LI> rtx_config.o(.text)
+</UL>
+<P><STRONG><a name="[d917d8]"></a>os_sys_manager_ret</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_hal.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d97958]"></a>SWI_Handler</STRONG> (ARM, 184 bytes, Stack size 0 bytes, rt_hal.o(.emb_text))
+<BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
+</UL>
+<P><STRONG><a name="[d9179c]"></a>os_switch_tasks_ret</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_hal.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[d91760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__SWI_0
+</UL>
+
+<P><STRONG><a name="[d9a004]"></a>CAN_init</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, rtx_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = CAN_init &rArr; CAN_hw_init &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d99b18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_init
+<LI><a href="#[d99bcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_init
+<LI><a href="#[d99c44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_box
+<LI><a href="#[d99d70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_setup
+<LI><a href="#[d99e24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9944c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;INIT_CAN
+</UL>
+
+<P><STRONG><a name="[d99fc8]"></a>CAN_start</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, rtx_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CAN_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d99d34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9944c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;INIT_CAN
+</UL>
+
+<P><STRONG><a name="[d99f8c]"></a>CAN_send</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rtx_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = CAN_send &rArr; CAN_push &rArr; os_mbx_send &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_push
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Transmit
+</UL>
+
+<P><STRONG><a name="[d99f50]"></a>CAN_request</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rtx_can.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d9a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_push
+</UL>
+
+<P><STRONG><a name="[d99f14]"></a>CAN_set</STRONG> (Thumb, 70 bytes, Stack size 32 bytes, rtx_can.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d99adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_send
+<LI><a href="#[d99c08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dly_wait
+<LI><a href="#[d99cf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_tx_empty
+<LI><a href="#[d99dac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_set
+</UL>
+
+<P><STRONG><a name="[d99ed8]"></a>CAN_receive</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, rtx_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = CAN_receive &rArr; os_mbx_wait &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_CAN_rx
+</UL>
+
+<P><STRONG><a name="[d99e9c]"></a>CAN_rx_object</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, rtx_can.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d99de8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_rx_object
+</UL>
+
+<P><STRONG><a name="[d99e60]"></a>CAN_tx_object</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, rtx_can.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d99cbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_tx_object
+</UL>
+
+<P><STRONG><a name="[d9944c]"></a>INIT_CAN</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, can_node.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = INIT_CAN &rArr; CAN_init &rArr; CAN_hw_init &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d99fc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_start
+<LI><a href="#[d9a004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_CAN_tx
+</UL>
+
+<P><STRONG><a name="[d99410]"></a>Transmit</STRONG> (Thumb, 54 bytes, Stack size 32 bytes, can_node.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = Transmit &rArr; CAN_send &rArr; CAN_push &rArr; os_mbx_send &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d99f8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_CAN_tx
+</UL>
+
+<P><STRONG><a name="[d99c80]"></a>CAN_hw_wr</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, can_hw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d98ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_ISR (via Veneer)
+<LI><a href="#[d9a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_push
+</UL>
+
+<P><STRONG><a name="[d99d70]"></a>CAN_hw_setup</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, can_hw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = CAN_hw_setup
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9a004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_init
+</UL>
+
+<P><STRONG><a name="[d99e24]"></a>CAN_hw_init</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, can_hw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = CAN_hw_init &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8d818]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9a004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_init
+</UL>
+
+<P><STRONG><a name="[d99d34]"></a>CAN_hw_start</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, can_hw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d99fc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_start
+</UL>
+
+<P><STRONG><a name="[d99cf8]"></a>CAN_hw_tx_empty</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, can_hw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = CAN_hw_tx_empty &rArr; os_sem_wait &rArr; os_block &rArr; os_put_dly
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d989fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_wait
+<LI><a href="#[d99adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99f14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_set
+<LI><a href="#[d9a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_push
+</UL>
+
+<P><STRONG><a name="[d99dac]"></a>CAN_hw_set</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, can_hw.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d99f14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_set
+</UL>
+
+<P><STRONG><a name="[d99de8]"></a>CAN_hw_rx_object</STRONG> (Thumb, 446 bytes, Stack size 24 bytes, can_hw.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d99e9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_rx_object
+</UL>
+
+<P><STRONG><a name="[d99cbc]"></a>CAN_hw_tx_object</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, can_hw.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d99e60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_tx_object
+</UL>
+
+<P><STRONG><a name="[d97fac]"></a>task_CAN_rx</STRONG> (Thumb, 30 bytes, Stack size 32 bytes, can_manju.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = task_CAN_rx &rArr; CAN_receive &rArr; os_mbx_wait &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d99ed8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_receive
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> can_manju.o(.text)
+</UL>
+<P><STRONG><a name="[d97f70]"></a>task_CAN_tx</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, can_manju.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = task_CAN_tx &rArr; Transmit &rArr; CAN_send &rArr; CAN_push &rArr; os_mbx_send &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d97e80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_itv_wait
+<LI><a href="#[d97ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_itv_set
+<LI><a href="#[d99410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Transmit
+<LI><a href="#[d9944c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;INIT_CAN
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> can_manju.o(.text)
+</UL>
+<P><STRONG><a name="[d97f34]"></a>task_init</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, can_manju.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = task_init &rArr; os_tsk_create0 &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d97dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_delete
+<LI><a href="#[d97e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_create0
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> can_manju.o(.text)
+</UL>
+<P><STRONG><a name="[d97ef8]"></a>main</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, can_manju.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d97e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init0
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry7.o(.ARM.Collect$$$$00000007)
+</UL>
+<P><STRONG><a name="[d96ecc]"></a>os_idle_demon</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d96ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_idle_demon
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+<LI><a href="#[d96ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_idle_demon
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rt_task.o(i.os_sys_init1)
+</UL>
+<P><STRONG><a name="[d96e90]"></a>os_tmr_call</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d90824]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_tick
+</UL>
+
+<P><STRONG><a name="[d96e54]"></a>os_stk_overflow</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d96e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_stk_overflow
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d91760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__SWI_0
+<LI><a href="#[d96e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_stk_overflow
+</UL>
+
+<P><STRONG><a name="[d96e18]"></a>os_tmr_init</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+</UL>
+
+<P><STRONG><a name="[d96ddc]"></a>os_tmr_force_irq</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d938a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psh_req
+</UL>
+
+<P><STRONG><a name="[d96da0]"></a>os_tmr_inspect_cnt</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+<LI><a href="#[d938a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psh_req
+</UL>
+
+<P><STRONG><a name="[d96d64]"></a>os_tmr_inspect_ovf</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d938a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psh_req
+</UL>
+
+<P><STRONG><a name="[d96d28]"></a>os_irq_ack_lock</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> rt_hal.o(.emb_text)
+</UL>
+<P><STRONG><a name="[d96cec]"></a>tsk_lock</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+<LI><a href="#[d97dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_delete
+<LI><a href="#[d97e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_create0
+<LI><a href="#[d97e80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_itv_wait
+<LI><a href="#[d989fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_wait
+<LI><a href="#[d99adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_send
+<LI><a href="#[d99b18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_init
+<LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+<LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+<LI><a href="#[d99bcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_init
+<LI><a href="#[d99c08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dly_wait
+</UL>
+
+<P><STRONG><a name="[d96cb0]"></a>tsk_unlock</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rtx_config.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d91760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__SWI_0
+<LI><a href="#[d97dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_delete
+<LI><a href="#[d97e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_create0
+<LI><a href="#[d97e80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_itv_wait
+<LI><a href="#[d989fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_wait
+<LI><a href="#[d99adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_send
+<LI><a href="#[d99b18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_init
+<LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+<LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+<LI><a href="#[d99bcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_init
+<LI><a href="#[d99c08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dly_wait
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rt_hal.o(.emb_text)
+</UL>
+<P><STRONG><a name="[d8d854]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[d8d818]"></a>__aeabi_uidivmod</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, uidiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99e24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_init
+</UL>
+
+<P><STRONG><a name="[d8d32c]"></a>__scatterload</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d8d2b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r3
+<LI><a href="#[d8d5c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8d5fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d8d2f0]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[d8d2b4]"></a>__ARM_common_call_via_r3</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init.o(i.__ARM_common_call_via_r3))
+<BR><BR>[Called By]<UL><LI><a href="#[d8d32c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[d91760]"></a>__SWI_0</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, rt_hal.o(i.__SWI_0))
+<BR><BR>[Calls]<UL><LI><a href="#[d91508]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_post_taskswitch (Weak Reference)
+<LI><a href="#[d9179c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_switch_tasks_ret
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_stk_overflow
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d9278c]"></a>__SWI_1</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rt_membox.o(i.__SWI_1))
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d92750]"></a>__SWI_2</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, rt_membox.o(i.__SWI_2))
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d91724]"></a>__SWI_3</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_hal.o(i.__SWI_3))
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d916e8]"></a>__SWI_4</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_hal.o(i.__SWI_4))
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d915bc]"></a>__SWI_5</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rt_hal.o(i.__SWI_5))
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d91580]"></a>__SWI_6</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rt_hal.o(i.__SWI_6))
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d91544]"></a>__SWI_7</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rt_hal.o(i.__SWI_7))
+<BR>[Address Reference Count : 1]<UL><LI> SWI_Table.o(SWI_TABLE)
+</UL>
+<P><STRONG><a name="[d8cf30]"></a>__scatterload_copy</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d8cf30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8cf30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[d8cef4]"></a>__scatterload_null</STRONG> (ARM, 4 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[d8ceb8]"></a>__scatterload_zeroinit</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[d99c44]"></a>_init_box</STRONG> (Thumb, 74 bytes, Stack size 4 bytes, rt_membox.o(i._init_box))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = _init_box
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+<LI><a href="#[d9a004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_init
+</UL>
+
+<P><STRONG><a name="[d98aec]"></a>isr_mbx_receive</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, rt_mailbox.o(i.isr_mbx_receive))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = isr_mbx_receive &rArr; os_psh_req
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9386c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psq_enq
+<LI><a href="#[d938a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psh_req
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d98ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_ISR (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d98ab0]"></a>isr_mbx_send</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, rt_mailbox.o(i.isr_mbx_send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = isr_mbx_send &rArr; os_psh_req
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9386c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psq_enq
+<LI><a href="#[d938a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psh_req
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d98ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_ISR (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d98a74]"></a>isr_sem_send</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, rt_semaphore.o(i.isr_sem_send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = isr_sem_send &rArr; os_psh_req
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9386c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psq_enq
+<LI><a href="#[d938a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psh_req
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d98ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_ISR (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d95270]"></a>os_block</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, rt_task.o(i.os_block))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = os_block &rArr; os_put_dly
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94fa0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_dly
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97e80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_itv_wait
+<LI><a href="#[d989fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_wait
+<LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+<LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+<LI><a href="#[d99c08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dly_wait
+</UL>
+
+<P><STRONG><a name="[d90914]"></a>os_chk_robin</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, rt_robin.o(i.os_chk_robin))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = os_chk_robin &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d908d8]"></a>os_dec_dly</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, rt_list.o(i.os_dec_dly))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = os_dec_dly &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d95234]"></a>os_dispatch</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, rt_task.o(i.os_dispatch))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94f28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_rdy_first
+<LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_delete
+<LI><a href="#[d97e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_create0
+<LI><a href="#[d99adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_send
+<LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+<LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+</UL>
+
+<P><STRONG><a name="[d99c08]"></a>os_dly_wait</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, rt_time.o(i.os_dly_wait), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d95270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_block
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99f14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_set
+</UL>
+
+<P><STRONG><a name="[d9089c]"></a>os_evt_psh</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, rt_event.o(i.os_evt_psh))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = os_evt_psh &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_dly
+<LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d95090]"></a>os_get_first</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, rt_list.o(i.os_get_first))
+<BR><BR>[Called By]<UL><LI><a href="#[d90914]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_chk_robin
+<LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+<LI><a href="#[d92f48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_psh
+<LI><a href="#[d938e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_psh
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+<LI><a href="#[d95270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_block
+<LI><a href="#[d99adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_send
+<LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+<LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+</UL>
+
+<P><STRONG><a name="[d95018]"></a>os_init_stack</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, rt_hal.o(i.os_init_stack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = os_init_stack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d95c0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_init_context
+</UL>
+
+<P><STRONG><a name="[d97ebc]"></a>os_itv_set</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rt_time.o(i.os_itv_set))
+<BR><BR>[Called By]<UL><LI><a href="#[d97f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_CAN_tx
+</UL>
+
+<P><STRONG><a name="[d97e80]"></a>os_itv_wait</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, rt_time.o(i.os_itv_wait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = os_itv_wait &rArr; os_block &rArr; os_put_dly
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d95270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_block
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_CAN_tx
+</UL>
+
+<P><STRONG><a name="[d98a38]"></a>os_mbx_check</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_mailbox.o(i.os_mbx_check))
+<BR><BR>[Called By]<UL><LI><a href="#[d98ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_ISR (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d99bcc]"></a>os_mbx_init</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, rt_mailbox.o(i.os_mbx_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = os_mbx_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9a004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_init
+</UL>
+
+<P><STRONG><a name="[d938e4]"></a>os_mbx_psh</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, rt_mailbox.o(i.os_mbx_psh))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = os_mbx_psh &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_dly
+<LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d99b90]"></a>os_mbx_send</STRONG> (Thumb, 160 bytes, Stack size 32 bytes, rt_mailbox.o(i.os_mbx_send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = os_mbx_send &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_dly
+<LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+<LI><a href="#[d95270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_block
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_push
+</UL>
+
+<P><STRONG><a name="[d99b54]"></a>os_mbx_wait</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, rt_mailbox.o(i.os_mbx_wait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = os_mbx_wait &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_dly
+<LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+<LI><a href="#[d95270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_block
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99ed8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_receive
+</UL>
+
+<P><STRONG><a name="[d938a8]"></a>os_psh_req</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, rt_system.o(i.os_psh_req))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = os_psh_req
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d96d64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_inspect_ovf
+<LI><a href="#[d96da0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_inspect_cnt
+<LI><a href="#[d96ddc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_force_irq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d98a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_sem_send
+<LI><a href="#[d98ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_mbx_send
+<LI><a href="#[d98aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_mbx_receive
+</UL>
+
+<P><STRONG><a name="[d90860]"></a>os_psq_deq</STRONG> (Thumb, 30 bytes, Stack size 4 bytes, rt_list.o(i.os_psq_deq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = os_psq_deq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d9386c]"></a>os_psq_enq</STRONG> (Thumb, 26 bytes, Stack size 4 bytes, rt_list.o(i.os_psq_enq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = os_psq_enq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d98a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_sem_send
+<LI><a href="#[d98ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_mbx_send
+<LI><a href="#[d98aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_mbx_receive
+</UL>
+
+<P><STRONG><a name="[d94fa0]"></a>os_put_dly</STRONG> (Thumb, 78 bytes, Stack size 4 bytes, rt_list.o(i.os_put_dly))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = os_put_dly
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d95270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_block
+</UL>
+
+<P><STRONG><a name="[d94f64]"></a>os_put_prio</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, rt_list.o(i.os_put_prio))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = os_put_prio
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9089c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_evt_psh
+<LI><a href="#[d908d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dec_dly
+<LI><a href="#[d90914]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_chk_robin
+<LI><a href="#[d92f48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_psh
+<LI><a href="#[d938e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_psh
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+<LI><a href="#[d989fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_wait
+<LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+<LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+</UL>
+
+<P><STRONG><a name="[d94f28]"></a>os_put_rdy_first</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rt_list.o(i.os_put_rdy_first))
+<BR><BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+</UL>
+
+<P><STRONG><a name="[d94e74]"></a>os_rmv_dly</STRONG> (Thumb, 44 bytes, Stack size 4 bytes, rt_list.o(i.os_rmv_dly))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = os_rmv_dly
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9089c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_evt_psh
+<LI><a href="#[d92f48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_psh
+<LI><a href="#[d938e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_psh
+<LI><a href="#[d97dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_delete
+<LI><a href="#[d99adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_send
+<LI><a href="#[d99b54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_wait
+<LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+</UL>
+
+<P><STRONG><a name="[d94e38]"></a>os_rmv_list</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, rt_list.o(i.os_rmv_list))
+<BR><BR>[Called By]<UL><LI><a href="#[d97dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_delete
+</UL>
+
+<P><STRONG><a name="[d99b18]"></a>os_sem_init</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, rt_semaphore.o(i.os_sem_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = os_sem_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9a004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_init
+</UL>
+
+<P><STRONG><a name="[d92f48]"></a>os_sem_psh</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, rt_semaphore.o(i.os_sem_psh))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = os_sem_psh &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_dly
+<LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d99adc]"></a>os_sem_send</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, rt_semaphore.o(i.os_sem_send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = os_sem_send &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_dly
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99cf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_tx_empty
+<LI><a href="#[d99f14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_set
+</UL>
+
+<P><STRONG><a name="[d989fc]"></a>os_sem_wait</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, rt_semaphore.o(i.os_sem_wait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = os_sem_wait &rArr; os_block &rArr; os_put_dly
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94f64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_prio
+<LI><a href="#[d95270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_block
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99cf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_tx_empty
+</UL>
+
+<P><STRONG><a name="[d951f8]"></a>os_sys_init1</STRONG> (Thumb, 162 bytes, Stack size 0 bytes, rt_task.o(i.os_sys_init1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = os_sys_init1 &rArr; os_init_context &rArr; os_init_stack
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94d48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_init (Weak Reference)
+<LI><a href="#[d94d84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_run
+<LI><a href="#[d94dc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_set_env
+<LI><a href="#[d95c0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_init_context
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+<LI><a href="#[d96e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_init
+<LI><a href="#[d96ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_idle_demon
+<LI><a href="#[d99c44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_box
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rt_hal.o(.emb_text)
+</UL>
+<P><STRONG><a name="[d915f8]"></a>os_sys_manager</STRONG> (Thumb, 152 bytes, Stack size 8 bytes, rt_system.o(i.os_sys_manager))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
+<LI>Call Chain = os_sys_manager &rArr; os_dec_dly &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d907ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_reload (Weak Reference)
+<LI><a href="#[d90824]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_tick
+<LI><a href="#[d90860]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_psq_deq
+<LI><a href="#[d9089c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_evt_psh
+<LI><a href="#[d908d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dec_dly
+<LI><a href="#[d90914]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_chk_robin
+<LI><a href="#[d917d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager_ret
+<LI><a href="#[d92f48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sem_psh
+<LI><a href="#[d938e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_psh
+<LI><a href="#[d94f28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_put_rdy_first
+<LI><a href="#[d95090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_get_first
+<LI><a href="#[d96da0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_inspect_cnt
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rt_hal.o(.emb_text)
+</UL>
+<P><STRONG><a name="[d90824]"></a>os_tmr_tick</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, rt_timer.o(i.os_tmr_tick))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = os_tmr_tick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d96e90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tmr_call
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d97e08]"></a>os_tsk_create0</STRONG> (Thumb, 132 bytes, Stack size 40 bytes, rt_task.o(i.os_tsk_create0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = os_tsk_create0 &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94d0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_notify (Weak Reference)
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+<LI><a href="#[d95c0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_init_context
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97f34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rt_task.o(i.os_sys_init1)
+</UL>
+<P><STRONG><a name="[d97dcc]"></a>os_tsk_delete</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, rt_task.o(i.os_tsk_delete))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = os_tsk_delete &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d94d0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_notify (Weak Reference)
+<LI><a href="#[d94e38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_list
+<LI><a href="#[d94e74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_rmv_dly
+<LI><a href="#[d95234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_dispatch
+<LI><a href="#[d96cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_unlock
+<LI><a href="#[d96cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tsk_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97f34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_init
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[d9a6d0]"></a>CAN_push</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, rtx_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = CAN_push &rArr; os_mbx_send &rArr; os_dispatch &rArr; os_put_prio
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d99b90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_send
+<LI><a href="#[d99c80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_wr
+<LI><a href="#[d99cf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_tx_empty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d99f50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_request
+<LI><a href="#[d99f8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_send
+</UL>
+
+<P><STRONG><a name="[d98ee8]"></a>CAN_ISR</STRONG> (ARM, 328 bytes, Stack size 48 bytes, can_hw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = CAN_ISR &rArr; isr_sem_send &rArr; os_psh_req
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d98a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_mbx_check (via Veneer)
+<LI><a href="#[d98a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_sem_send (via Veneer)
+<LI><a href="#[d98ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_mbx_send (via Veneer)
+<LI><a href="#[d98aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_mbx_receive (via Veneer)
+<LI><a href="#[d98eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_rd (via Veneer)
+<LI><a href="#[d99c80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_hw_wr (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> can_hw.o(.text)
+</UL>
+<P><STRONG><a name="[d98eac]"></a>CAN_hw_rd</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, can_hw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d98ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_ISR (via Veneer)
+</UL>
+
+<P><STRONG><a name="[d97bec]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, lpc2300.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[d97bec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97bec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
+</UL>
+<P><STRONG><a name="[d97bb0]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, lpc2300.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[d97bb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97bb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
+</UL>
+<P><STRONG><a name="[d97b74]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, lpc2300.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[d97b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97b74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
+</UL>
+<P><STRONG><a name="[d97b38]"></a>IRQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, lpc2300.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[d97b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
+</UL>
+<P><STRONG><a name="[d97afc]"></a>FIQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, lpc2300.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[d97afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d97afc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
+</UL>
+<P><STRONG><a name="[d95c0c]"></a>os_init_context</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, rt_task.o(i.os_init_context))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = os_init_context &rArr; os_init_stack
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d95018]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_init_stack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+<LI><a href="#[d97e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_create0
+</UL>
+
+<P><STRONG><a name="[d91a30]"></a>Switch_task</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rt_hal.o(.emb_text))
+<BR>[Address Reference Count : 1]<UL><LI> rt_hal.o(.emb_text)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[d907ac]"></a>os_tmr_reload</STRONG> (Unknown, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[d915f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_manager
+</UL>
+
+<P><STRONG><a name="[d94d48]"></a>rt_init</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[d951f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sys_init1
+</UL>
+
+<P><STRONG><a name="[d94d0c]"></a>rt_notify</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[d97dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_delete
+<LI><a href="#[d97e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_tsk_create0
+</UL>
+
+<P><STRONG><a name="[d91508]"></a>rt_post_taskswitch</STRONG> (Unknown, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[d91760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__SWI_0
+</UL>
+<HR></body></html>

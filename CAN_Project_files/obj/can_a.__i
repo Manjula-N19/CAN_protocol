@@ -1,0 +1,1 @@
+ --thumb -c --device DARMP -D__RTX -D__MICROLIB -g -O3 --apcs=interwork -I "C:\EVAL_Keil\ARM\INC\Philips" -o ".\obj\can_a.o" --omf_browse ".\obj\can_a.crf" --depend ".\obj\can_a.d" "CAN_A.c"

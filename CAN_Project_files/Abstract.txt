@@ -1,0 +1,1 @@
+8 bytes data is sent from controller 1 and recieved at controller 2	every second.

@@ -1,0 +1,9 @@
+.\obj\can_hw.o: CAN_Hw.c
+.\obj\can_hw.o: C:\Keil\ARM\RV31\INC\RTL.h
+.\obj\can_hw.o: C:\Keil\ARM\INC\Philips\LPC23xx.h
+.\obj\can_hw.o: RTX_CAN.h
+.\obj\can_hw.o: CAN_Cfg.h
+.\obj\can_hw.o: CAN_Error.h
+.\obj\can_hw.o: CAN_hw.h
+.\obj\can_hw.o: RTX_CAN.h
+.\obj\can_hw.o: CAN_reg.h

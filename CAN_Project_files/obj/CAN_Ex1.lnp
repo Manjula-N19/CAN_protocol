@@ -1,0 +1,4 @@
+--device DARMP ".\obj\rtx_can.o" ".\obj\can_node.o" ".\obj\can_hw.o" ".\obj\serial.o" ".\obj\can_manju.o" ".\obj\lpc2300.o" ".\obj\rtx_config.o" "C:\Keil\ARM\RV31\LIB\RTX_ARM_L.LIB" --library_type=microlib --strict --scatter ".\obj\CAN_Ex1.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\CAN_Ex1.map" -o ".\obj\CAN_Ex1.axf"
